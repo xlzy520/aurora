@@ -1,8 +1,9 @@
 import Vue from 'vue'
-import AV from 'leancloud-storage'
 import isMobile from 'ismobilejs'
+import AV from 'leancloud-storage'
 import FontFaceObserver from 'fontfaceobserver'
 import VueProgressBar from 'vue-progressbar'
+import SmoothScroll from 'smooth-scroll'
 import APlayer from '@moefe/vue-aplayer'
 
 // Let's go!
@@ -17,15 +18,38 @@ import 'gitalk/dist/gitalk.css'
 import './assets/font/fontello.less'
 import './assets/style/animation.less'
 import './assets/style/layout.less'
+// import './assets/style/reset.less'
+
+// 引入动效库
+import firework from './assets/lib/fireworks'
+import fairyDustCursor from './assets/lib/fairyDustCursor'
 
 // 配置全局变量
 Vue.config.productionTip = false
 Vue.prototype.$config = config
-Vue.prototype.$isMobile = isMobile().phone
+Vue.prototype.$isMobile = isMobile.phone
+Vue.prototype.$gallery = null
 
 // Init Leancloud
 window.AV = AV
 AV.init(config.leancloud)
+
+// 滚动到锚点
+const scrollOpts = {
+  updateURL: false,
+  emitEvents: false,
+  durationMin: 600,
+  durationMax: 1000,
+  easing: 'easeInQuint'
+}
+const scroll = new SmoothScroll()
+Vue.prototype.$scroll = (anchor, toggle) => {
+  if (toggle) {
+    scroll.animateScroll(anchor, toggle, scrollOpts)
+  } else {
+    scroll.animateScroll(anchor, scrollOpts)
+  }
+}
 
 // 顶部进度条
 const options = {
@@ -46,6 +70,12 @@ Vue.use(VueProgressBar, options)
 Vue.use(APlayer, {
   productionTip: false // disable console output
 })
+
+// 烟花特效与鼠标特效
+if (!isMobile.phone) {
+  config.effect.firework && firework()
+  config.effect.fairyDustCursor && fairyDustCursor()
+}
 
 // 载入字体
 ;(function() {

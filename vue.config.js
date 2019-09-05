@@ -27,7 +27,9 @@ module.exports = {
         '//cdn.bootcss.com/lightgallery/1.6.12/css/lightgallery.min.css'
       ],
       js: [
-        'https://cdn.bootcss.com/jquery/3.4.0/jquery.slim.min.js',
+        'https://cdn.bootcss.com/animejs/2.2.0/anime.js',
+        '//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js',
+        '//cdn.jsdelivr.net/npm/jquery-backstretch@2.1.17/jquery.backstretch.min.js',
         'https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery-all.min.js',
         // 'https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery-all.min.js',
         // 'https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js',

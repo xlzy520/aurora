@@ -20,7 +20,6 @@ html {
 body,
 #app {
   min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 body {
@@ -35,8 +34,16 @@ body {
   cursor: url('../cursor/cursor.png'), auto;
 }
 
+/* 烟花特效 */
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 #bg {
   position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;
