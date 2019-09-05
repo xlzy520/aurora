@@ -14,8 +14,8 @@ export default {
   /**
    * 站点标题
    */
-  title: '蝉時雨',
-  subtitle: '蝉鸣如雨 花宵道中',
+  title: '执笔看墨花开',
+  subtitle: '微末凡尘 心向天空',
 
   /**
    * Github Issues 配置【文章、说说、书单、友链】
@@ -29,11 +29,11 @@ export default {
    * Gitalk 配置【评论功能】，详细文档参见：https://github.com/gitalk/gitalk
    */
   gitalk: {
-    clientID: '864b1c2cbc4e4aad9ed8',
-    clientSecret: '6ca16373efa03347e11a96ff92e355c5cea189bb',
+    clientID: '66ec31f5cac14337fac1',
+    clientSecret: 'ac82e44a98bc60cd5fa4daca86423ae14dc1f42c',
     repo: 'comment', // 评论仓库地址
-    owner: 'chanshiyucx',
-    admin: ['chanshiyucx'],
+    owner: 'xlzy520',
+    admin: ['xlzy520'],
     distractionFreeMode: false // 是否开始无干扰模式【背景遮罩】
   },
 

@@ -18,7 +18,6 @@ import 'gitalk/dist/gitalk.css'
 import './assets/font/fontello.less'
 import './assets/style/animation.less'
 import './assets/style/layout.less'
-// import './assets/style/reset.less'
 
 // 引入动效库
 import firework from './assets/lib/fireworks'

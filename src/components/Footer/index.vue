@@ -2,7 +2,7 @@
   <div id="footer">
     <div v-if="showWaifu && !$isMobile" class="waifu">
       <div v-show="tips && isMini" :class="['tips', this.waifu === 'tia' && 'tia']" v-html="tips"></div>
-      <canvas @click="handleClickWaifu" id="live2d" width="280" height="250" />
+      <canvas @click="handleClickWaifu" id="live2d" width="280" height="250"></canvas>
     </div>
     <div class="menu" v-if="!$isMobile">
       <div class="tool" v-if="showWaifu">
@@ -25,7 +25,7 @@
       <p><i class="icon icon-copyright"></i>2017-2019 <i class="icon icon-heart"></i> {{ $config.title }}</p>
       <p>
         Theme -
-        <a rel="noopener noreferrer" target="_blank" href="https://github.com/chanshiyucx/aurora">Aurora</a> |
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/xlzy520/xlzy520">xlzy520</a> |
         {{ $config.subtitle }}
       </p>
     </div>
@@ -169,6 +169,6 @@ export default {
 }
 </script>
 
-<style lang="less" scope>
+<style lang="less" scoped>
 @import './index.less';
 </style>
