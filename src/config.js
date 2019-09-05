@@ -14,7 +14,7 @@ export default {
   /**
    * 站点标题
    */
-  title: '执笔看墨花开',
+  title: '执笔看墨花开💜千千',
   subtitle: '微末凡尘 心向天空',
 
   /**
@@ -23,7 +23,7 @@ export default {
   username: 'xlzy520', // github 用户名
   repository: 'blog', // 文章仓库地址
   // token 从中间任意位置拆开成两部分，避免 github 代码检测失效
-  token: ['73fc1ba1aceed26c85a4', '8f9af1108536ea496bf6'],
+  token: ['d09871adecd7adba122cfa', '52632ef44b221f92ee'],
 
   /**
    * Gitalk 配置【评论功能】，详细文档参见：https://github.com/gitalk/gitalk
