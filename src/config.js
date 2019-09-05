@@ -31,7 +31,7 @@ export default {
   gitalk: {
     clientID: '66ec31f5cac14337fac1',
     clientSecret: 'ac82e44a98bc60cd5fa4daca86423ae14dc1f42c',
-    repo: 'comment', // 评论仓库地址
+    repo: 'blog', // 评论仓库地址
     owner: 'xlzy520',
     admin: ['xlzy520'],
     distractionFreeMode: false // 是否开始无干扰模式【背景遮罩】
