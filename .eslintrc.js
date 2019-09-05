@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true
   },
-  // extends: ['plugin:vue/essential', '@vue/prettier', "plugin:vue-libs/recommended"],
+  extends: ['plugin:vue/essential', '@vue/prettier', "plugin:vue-libs/recommended"],
   rules: {
     // "vue/max-attributes-per-line": [2, {
     //   "singleline": 10,
