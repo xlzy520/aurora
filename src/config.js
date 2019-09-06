@@ -23,7 +23,7 @@ export default {
   username: 'xlzy520', // github 用户名
   repository: 'blog', // 文章仓库地址
   // token 从中间任意位置拆开成两部分，避免 github 代码检测失效
-  token: ['8bb4ed5265a9984c ', '7cb83c34384b84a9eb7aefaa'],
+  token: ['8bb4ed5265a9984c', '7cb83c34384b84a9eb7aefaa'],
 
   /**
    * Gitalk 配置【评论功能】，详细文档参见：https://github.com/gitalk/gitalk
