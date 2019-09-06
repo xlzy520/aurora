@@ -93,9 +93,30 @@ new Vue({
 // 自定义控制台
 const labelStyle = 'color:#ffffff;line-height: 22px;'
 console.info(`%c ${config.title} %c`, `${labelStyle}background: #d68fe9;`, '', window.location.origin)
-console.info('%c Theme %c', `${labelStyle}background: #d68fe9;`, '', 'https://github.com/chanshiyucx/aurora')
+console.info('%c Theme %c', `${labelStyle}background: #d68fe9;`, '', 'https://github.com/xlzy520/xlzy520')
 console.info('~❀~ 发现控制台报错请务必联系博主 ~❀~')
-console.log(
-  '%c ',
-  'background:url(https://raw.githubusercontent.com/chanshiyucx/poi/master/2019/5c0cc2b905841.png) no-repeat center;background-size:200px;padding-left:200px;padding-bottom:162px;overflow:hidden;border-radius:10px;margin:5px 0'
+console.info(
+  '%c\n' +
+    '                              ..\n' +
+    "                            .' @`._\n" +
+    "             ~       ...._.'  ,__.-;\n" +
+    "          _..------/`           .-'    ~\n" +
+    "         :     __./'       ,  .'-'--.._\n" +
+    "      ~   `---(.-'''---.    \\`._       `.   ~\n" +
+    "        _.--'(  .______.'.-' `-.`        `.\n" +
+    '       :      `-..____`-.                  ;\n' +
+    '       `.             ````  稻花香里说丰年，  ;   ~\n' +
+    "         `-.__           听取人生经验。  __.-'\n" +
+    "              ````-----.......-----'''    ~\n" +
+    '           ~                   ~',
+  'color:#63cb4e;'
 )
+const img = { height: 1400 / 4, width: 792 / 4 }
+const url = 'https://i.loli.net/2019/09/06/RdZ3tj7s4g6boKh.jpg'
+const consoleImageCss = [
+  'padding: ' + (img.height / 2 - 8) + 'px ' + img.width / 2 + 'px;',
+  'line-height: ' + img.height + 'px;',
+  'background: url(' + url + ') no-repeat center;',
+  'background-size: 100% 100%;'
+]
+console.log('%c', consoleImageCss.join(''))
