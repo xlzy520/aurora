@@ -11,10 +11,9 @@ export const formatPost = (post, index) => {
   const { body, created_at } = post
   const result = regex.exec(body)
   const cover = coverRegex.exec(result[1])
-  const [title, src] = cover || []
   post.cover = {
-    title: title || 'defaultCover',
-    src: src || config.defaultCover
+    title: cover[1] || 'defaultCover',
+    src: cover[2] || config.defaultCover
   }
   post.loadCover = index < 4
   post.description = result[2]
