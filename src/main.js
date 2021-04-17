@@ -79,12 +79,16 @@ console.info(
     '           ~                   ~',
   'color:#63cb4e;'
 )
-const imgStyle = { height: 1400 / 4, width: 792 / 4 }
-const url = 'https://i0.hdslb.com/bfs/album/3fe66f13d7684fc1b451f05a1c349ac4e972bab6.jpg@1e_1c.webp'
-const consoleImageCss = [
-  'padding: ' + (imgStyle.height / 2 - 8) + 'px ' + imgStyle.width / 2 + 'px;',
-  'line-height: ' + imgStyle.height + 'px;',
-  'background: url(' + url + ') no-repeat center;',
-  'background-size: 100% 100%;'
-]
-console.log('%c', consoleImageCss.join(''))
+
+const url = 'https://i0.hdslb.com/bfs/album/379160c4240c397df6c00a871021675b8e9db40c.jpg'
+console.log(
+  '%c ',
+  `
+  margin:5px 0;
+  padding:0 0 354px 501px;
+  overflow:hidden;
+  border-radius:10px;
+  background:url(${url}) no-repeat center;
+  background-size: 501px;
+  `
+)
