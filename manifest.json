@@ -1,0 +1,23 @@
+{
+  "name": "执笔看墨花开",
+  "short_name": "执笔看墨花开",
+  "description": "微末凡尘 心向天空",
+  "lang": "zh-CN",
+  "theme_color": "#b854d4",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "//cdn.jsdelivr.net/gh/xlzy520/xlzy520.github.io/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "//cdn.jsdelivr.net/gh/xlzy520/xlzy520.github.io/assets/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
