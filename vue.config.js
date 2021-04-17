@@ -10,7 +10,7 @@ const externals = ()=>{
 }
 module.exports = {
   productionSourceMap: false,
-  publicPath: isProd ? `https://cdn.jsdelivr.net/gh/xlzy520/xlzy520.github.io/` : '/',
+  publicPath: isProd ? `https://cdn.jsdelivr.net/gh/xlzy520/xlzy520-blog@gh-pages/` : '/',
   devServer: {
     hot: true,
     clientLogLevel: 'warning'
